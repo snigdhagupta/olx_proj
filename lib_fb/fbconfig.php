@@ -76,7 +76,8 @@ echo "</pre>";
 /*-----attempting to get the user likes information ---- start -------*/            
 
 } else {
-  $loginUrl = $helper->getLoginUrl();
+    $loginUrl = $helper->getLoginUrl( array( 'user_likes' ) );
+  //$loginUrl = $helper->getLoginUrl();
  header("Location: ".$loginUrl);
 }
 ?>
