@@ -16,7 +16,7 @@ use Facebook\Entities\AccessToken;
 use Facebook\HttpClients\FacebookCurlHttpClient;
 use Facebook\HttpClients\FacebookHttpable;
 // init app with app id and secret
-FacebookSession::setDefaultApplication( '482995148546114','4b09607cdd9f8ca8014c383f70d7a195' );
+FacebookSession::setDefaultApplication( '1645064372373678','b1b171d25c1c9831b4bbc7ccafb3994a' );
 // login helper with redirect_uri
     //$helper = new FacebookRedirectLoginHelper('http://demos.krizna.com/lib_fb/fbconfig.php' );
 $helper = new FacebookRedirectLoginHelper('http://www.artharta.com/olx_proj/lib_fb/fbconfig.php' );
@@ -72,6 +72,8 @@ $graphObject = $response->getGraphObject();
 
 echo "likes: <br/> <pre>";
 print_r($response);
+
+
 echo "</pre>";
 /*-----attempting to get the user likes information ---- start -------*/            
 
